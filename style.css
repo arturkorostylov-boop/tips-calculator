@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding-left: none;
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font-family: inherit;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.wrapper {
+    max-width: 768px;
+    height: 807px;
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 44px rgba(148, 146, 120, 0.23);
+    border-radius: 20px;
+    margin-inline: 10px;
+    padding: 30px;
+}
+
+.label,
+label {
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+
+}
+
+.dollars {
+
+    sup {
+        font-size: 54px;
+        line-height: 65px;
+        color: #333333;
+        position: relative;
+        top: -28px;
+
+    }
+
+    span {
+        font-size: 82px;
+        line-height: 99px;
+        color: #333333;
+
+    }
+}
+
+.tip-amount,
+.total-per-person {
+    padding-block-start: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+}
+
+.total-per-person {}
+
+.calculator {
+    background: #F7F7F7;
+    border-radius: 20px;
+    padding: 60px 30px 50px;
+}
+
+.input-fields {
+    padding-block-end: 45px;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        border-bottom: 2px dotted #B3B3B3;
+        width: 100%;
+        height: 75px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 62px;
+        line-height: 75px;
+        color: #333333;
+        padding-left: 68px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+}
+
+.bill-amount,
+.number-of-people {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bill-amount {
+    width: 385px;
+
+    /* background-color: #fb5757; */
+
+    input {
+        background-image: url(./images/dollar.svg);
+    }
+}
+
+.number-of-people {
+    width: 218px;
+    /* background-color: #fb5757; */
+
+
+    input {
+        background-image: url(./images/people.svg);
+    }
+}
+
+.tip-percentages {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+        appearance: none;
+        margin: 0;
+
+    }
+
+    input+label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 135.5px;
+        height: 68px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #60C1B6;
+
+
+
+    }
+
+    input:checked+label {
+        color: white;
+        background-color: #60C1B6;
+    }
+}
+
+.button-wrapper {
+    padding-top: 38px;
+    /* text-align: right; */
+
+    button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 325px;
+        height: 68px;
+        background: #ED7861;
+        box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+        font-family: 'Roboto Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        margin-left: auto;
+    }
+}

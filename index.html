@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+
+<body class="inter">
+    <div class="wrapper">
+        <div class="tip-amount">
+            <div class="label roboto-mono">Tip amount</div>
+            <div class="dollars"><sup class="inter">$</sup><span class="inter" id="tip-amount">0</span></div>
+        </div>
+        <hr>
+        <div class="total-per-person">
+            <div class="label roboto-mono">Total per person</div>
+            <div class="dollars"><sup class="inter">$</sup><span class="inter" id="total-per-person">0</span></div>
+        </div>
+        <hr>
+        <div class="calculator">
+            <div class="input-fields">
+                <div class="bill-amount">
+                    <input type="number" id="bill-amount" value="10" name="bill-amount">
+                    <label for="bill-amount" class="roboto-mono">Bill amount</label>
+                </div>
+                <div class="number-of-people">
+                    <input type="number" id="number-of-people" value="1" name="number-of-people">
+                    <label for="number-of-people" class="roboto-mono">Number of people</label>
+                </div>
+            </div>
+            <div class="tip-percentages">
+                <div>
+                    <input type="radio" id="five-percent" name="tip" checked>
+                    <label for="five-percent">5%</label>
+                </div>
+                <div>
+                    <input type="radio" id="ten-percent" name="tip">
+                    <label for="ten-percent">10%</label>
+                </div>
+                <div>
+                    <input type="radio" id="fifteen-percent" name="tip">
+                    <label for="fifteen-percent">15%</label>
+                </div>
+                <div>
+                    <input type="radio" id="twenty-percent" name="tip">
+                    <label for="twenty-percent">20%</label>
+                </div>
+            </div>
+            <div class="button-wrapper">
+                <button id="calculate">Calculate</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
