@@ -10,8 +10,18 @@ calculateButton.addEventListener('click', () => {
     const originalBillAmount = billAmountInput.valueAsNumber
     const numberOfPeople = numberOfPeopleInput.valueAsNumber
 
+    const selectedRadioTip = document.querySelector('input[name="tip"]:checked')
+    const tipPercentages = parseInt(selectedRadioTip.value.slice(0, -1))
+    console.dir(tipPercentages);
 
+    const totalTip = (originalBillAmount * tipPercentages) / 100
+    console.log(totalTip);
+    tipAmountText.textContent = totalTip
+    
+    const totalBill = originalBillAmount + totalTip
+    console.log(totalBill);
 
-    const billToPerson = (originalBillAmount / numberOfPeople).toFixed(2)
-    console.log(billToPerson);
+    const perPerson = (totalBill / numberOfPeople).toFixed(2)
+    console.log(perPerson);
+    totalPerPersonText.textContent = perPerson
 })

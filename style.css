@@ -139,6 +139,7 @@ label {
     justify-content: center;
     align-items: center;
     gap: 10px;
+
 }
 
 .bill-amount {
@@ -148,6 +149,7 @@ label {
 
     input {
         background-image: url(./images/dollar.svg);
+        text-align: center;
     }
 }
 
@@ -158,6 +160,7 @@ label {
 
     input {
         background-image: url(./images/people.svg);
+        text-align: center;
     }
 }
 
